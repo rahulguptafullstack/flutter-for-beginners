@@ -19,17 +19,8 @@ class _HomeState extends State<Home> {
           ),
           backgroundColor: Colors.pink[600],
         ),
-        body: Container(
-          child: Text(
-            'Hello World',
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          color: Colors.red[500],
-          height: 200.0,
-          width: 200.0,
-          padding: EdgeInsets.all(30),
-          margin: EdgeInsets.all(50),
-          transform: Matrix4.rotationZ(0.2),
+        body: Center(
+          child: Icon(Icons.add_circle, size: 60, color: Colors.red),
         ));
   }
 }
