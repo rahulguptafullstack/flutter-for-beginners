@@ -12,40 +12,25 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Geeks Rank',
-          style: TextStyle(fontFamily: 'Pacifico', fontSize: 30),
-        ),
-        backgroundColor: Colors.pink[600],
-      ),
-      body: Image.asset(
-        'assets/images/4.jpg',
-        height: 600,
-        fit: BoxFit.cover,
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Text('click'),
-        onPressed: () => {
-          print('You clicked me '),
-        },
-        tooltip: 'Click button',
-        backgroundColor: Colors.pink[600],
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 40,
-          child: Center(
-            child: Text(
-              'Bottom Bar',
-              style: TextStyle(
-                  color: Colors.white, fontFamily: 'Pacifico', fontSize: 20),
-            ),
+        appBar: AppBar(
+          title: Text(
+            'Geeks Rank',
+            style: TextStyle(fontFamily: 'Pacifico', fontSize: 30),
           ),
+          backgroundColor: Colors.pink[600],
         ),
-        color: Colors.pink[600],
-      ),
-    );
+        body: Container(
+          child: Text(
+            'Hello World',
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          color: Colors.red[500],
+          height: 200.0,
+          width: 200.0,
+          padding: EdgeInsets.all(30),
+          margin: EdgeInsets.all(50),
+          transform: Matrix4.rotationZ(0.2),
+        ));
   }
 }
 
@@ -53,52 +38,5 @@ class MySTLHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
-  }
-}
-
-class MyHome extends StatefulWidget {
-  @override
-  _MyHomeState createState() => _MyHomeState();
-}
-
-class _MyHomeState extends State<MyHome> {
-  int counter = 0;
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Geeks Rank',
-          style: TextStyle(fontFamily: 'Pacifico', fontSize: 30),
-        ),
-        backgroundColor: Colors.pink[600],
-      ),
-      body: Center(
-        child: Text('$counter'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Text('click'),
-        onPressed: () => {
-          setState(() {
-            counter += 1;
-          })
-        },
-        tooltip: 'Click button',
-        backgroundColor: Colors.pink[600],
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 40,
-          child: Center(
-            child: Text(
-              'Bottom Bar',
-              style: TextStyle(
-                  color: Colors.white, fontFamily: 'Pacifico', fontSize: 20),
-            ),
-          ),
-        ),
-        color: Colors.pink[600],
-      ),
-    );
   }
 }
