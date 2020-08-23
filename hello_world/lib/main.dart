@@ -19,15 +19,38 @@ class _HomeState extends State<Home> {
           ),
           backgroundColor: Colors.pink[600],
         ),
-        body: Center(
-          child: Icon(Icons.add_circle, size: 60, color: Colors.red),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('Hello',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('World',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('Geeks',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            )
+          ],
         ));
-  }
-}
-
-class MySTLHome extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
