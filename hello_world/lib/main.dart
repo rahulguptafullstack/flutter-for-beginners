@@ -19,14 +19,15 @@ class _HomeState extends State<Home> {
           ),
           backgroundColor: Colors.pink[600],
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //crossAxisAlignment: CrossAxisAlignment.center,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //crossAxisAlignment: CrossAxisAlignment.end,
+          textDirection: TextDirection.rtl,
           children: <Widget>[
             Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('Hello',
+              child: Text('1',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
@@ -35,7 +36,7 @@ class _HomeState extends State<Home> {
             Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('World',
+              child: Text('2',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
@@ -44,12 +45,39 @@ class _HomeState extends State<Home> {
             Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('Geeks',
+              child: Text('3',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
                   )),
-            )
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('4',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('5',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[600]),
+              child: Text('6',
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  )),
+            ),
           ],
         ));
   }
