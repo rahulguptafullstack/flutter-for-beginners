@@ -19,64 +19,46 @@ class _HomeState extends State<Home> {
           ),
           backgroundColor: Colors.pink[600],
         ),
-        body: Column(
+        body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           textDirection: TextDirection.rtl,
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('1',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
+            Expanded(
+              flex: 2,
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(color: Colors.yellow[600]),
+                child: Text('1',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                    )),
+              ),
             ),
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('2',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(color: Colors.green[600]),
+                child: Text('2',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                    )),
+              ),
             ),
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('3',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('4',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('5',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
-            ),
-            Container(
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.pink[600]),
-              child: Text('6',
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  )),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(color: Colors.pink[600]),
+                child: Text('3',
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                    )),
+              ),
             ),
           ],
         ));
