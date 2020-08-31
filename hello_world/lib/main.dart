@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/Screens/home_screen.dart';
+import 'package:hello_world/Screens/notification_screen.dart';
 import 'package:hello_world/Screens/profile_screen.dart';
 
 void main() => runApp(MaterialApp(
@@ -9,5 +10,6 @@ void main() => runApp(MaterialApp(
       routes: {
         '/': (context) => Home(),
         '/profile': (context) => Profile(),
+        '/notification': (context) => NotificationScreen(),
       },
     ));

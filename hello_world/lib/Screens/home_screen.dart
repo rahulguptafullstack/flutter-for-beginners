@@ -39,6 +39,14 @@ class _HomeState extends State<Home> {
           style: TextStyle(fontSize: 25),
         ),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/notification');
+            },
+            icon: Icon(Icons.add_alert),
+          )
+        ],
       ),
       body: Center(
         child: Text(
