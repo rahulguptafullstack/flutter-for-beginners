@@ -40,11 +40,30 @@ class _HomeState extends State<Home> {
         ),
         centerTitle: true,
         actions: <Widget>[
-          IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/notification');
-            },
-            icon: Icon(Icons.add_alert),
+          Stack(
+            children: <Widget>[
+              IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/notification');
+                },
+                icon: Icon(Icons.notifications),
+                iconSize: 30.0,
+              ),
+              Positioned(
+                top: 12.0,
+                bottom: 20.0,
+                left: 17.0,
+                child: Container(
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle, color: Colors.red[500]),
+                  child: Text(
+                    '10',
+                    style: TextStyle(fontSize: 10.0),
+                  ),
+                  alignment: Alignment.center,
+                ),
+              )
+            ],
           )
         ],
       ),
