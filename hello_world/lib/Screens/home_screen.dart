@@ -68,9 +68,26 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: Center(
-        child: Text(
-          'Current Index - $_selectedItem',
-          style: TextStyle(fontSize: 25),
+        child: Card(
+          elevation: 3.0,
+          clipBehavior: Clip.antiAlias,
+          margin: EdgeInsets.all(10),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              ListTile(
+                leading: Icon(Icons.label),
+                title: Text('Title'),
+                subtitle: Text('Sub Title'),
+              ),
+              Image.asset(
+                'assets/images/1.jpg',
+                height: 200.0,
+                width: 200.0,
+                fit: BoxFit.cover,
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
