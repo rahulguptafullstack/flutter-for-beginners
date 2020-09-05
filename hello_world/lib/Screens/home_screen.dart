@@ -81,9 +81,15 @@ class _HomeState extends State<Home> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 ListTile(
-                  leading: Icon(Icons.label),
+                  leading: FlutterLogo(
+                    size: 40,
+                  ),
                   title: Text('Title'),
-                  subtitle: Text('Sub Title'),
+                  subtitle: Text(
+                      'Sub Title Sub Title Sub Title Sub Title Sub Title Sub Title'),
+                  isThreeLine: true,
+                  //dense: true,
+                  trailing: Icon(Icons.delete),
                 ),
                 Image.asset(
                   'assets/images/1.jpg',
