@@ -11,41 +11,199 @@ class _NotificationScreenState extends State<NotificationScreen> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('Notifications'),
-          bottom: TabBar(
-            tabs: <Widget>[
-              Tab(
-                icon: Icon(Icons.call_missed),
-                text: 'Missed Call',
+          appBar: AppBar(
+            title: Text('Notifications'),
+          ),
+          body: ListView(
+            padding: EdgeInsets.all(8.0),
+            scrollDirection: Axis.vertical,
+            children: <Widget>[
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
               ),
-              Tab(
-                icon: Icon(Icons.call_received),
-                text: 'Received Call',
+              Container(
+                height: 80.0,
+                color: Colors.blue,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
               ),
-              Tab(
-                icon: Icon(Icons.call_made),
-                text: 'Dial Call',
+              Container(
+                height: 80.0,
+                color: Colors.yellow,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.amberAccent,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.green,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ),
+              Container(
+                height: 80.0,
+                color: Colors.red,
+                child: Text(
+                  'Notification Here',
+                  style: TextStyle(fontSize: 25.0),
+                ),
               ),
             ],
-          ),
-        ),
-        body: TabBarView(
-          children: <Widget>[
-            Center(
-                child: Text(
-              'Missed Call Here',
-              style: TextStyle(fontSize: 25.0),
-            )),
-            Center(
-                child: Text('Received Call Here',
-                    style: TextStyle(fontSize: 25.0))),
-            Center(
-                child:
-                    Text('Dial Call Here', style: TextStyle(fontSize: 25.0))),
-          ],
-        ),
-      ),
+          )),
     );
   }
 }
