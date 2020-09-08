@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/Screens/profile_screen.dart';
+import 'package:hello_world/widgets/drawer.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -67,6 +68,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
+      drawer: DrawerScreen(),
       body: Center(
         child: Card(
           elevation: 3.0,
